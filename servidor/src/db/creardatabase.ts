@@ -5,7 +5,7 @@ import * as fs from "fs";
 const path_sql: string = "/home/diegoh/ing_software/test-db/servidor/src/db/db.sql"
 const sql = fs.readFileSync(path_sql, "utf8").trim();
 
-const crear_db = () => {
+const crearDatabase = () => {
   connection.connect((err) => {
     if (err) throw err;
     console.log('Conectado a la base de datos');
@@ -30,4 +30,4 @@ const crear_db = () => {
   });
 };
 
-export default crear_db;
+export default crearDatabase;

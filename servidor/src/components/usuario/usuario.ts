@@ -1,4 +1,5 @@
 import { Publicacion } from "../publicacion/publicacion";
+
 export class Usuario {
     constructor(
         public nombreUsuario: string,
